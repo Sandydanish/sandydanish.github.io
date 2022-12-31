@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body style="background-image: url(/staticFiles/background2.webp)">
+    <div style="font-size: 50px; text-align: center">Result</div>
+    {% for img, txt in user_image %}
+    <p style="text-align: center; font-size: 20px; font-weight: bold;">
+      <img src="{{ img }}" alt="dogImage" width="300" height="300" />
+      <p style="text-align: center; font-size: 25px; font-weight: bold; background-color: white;">
+        {{txt}}
+      </p>
+      {% if "['Akita']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Bulu Akita harus disikat seminggu sekali untuk mendapatkan penampilan terbaiknya</li>
+          <li>Kuku juga harus dipotong secara teratur, karena kuku yang terlalu panjang dapat menyebabkan rasa sakit dan masalah pada anjing.</li>
+          <li>Menyikat gigi anjing untuk memastikan kesehatan gigi</li>
+          <li>Lakukan jogging atau jalan cepat di sekitar blok setidaknya sekali sehari untuk memenuhi kebutuhan latihan anjing.</li>
+          <li>Periksa dengan dokter hewan jika memiliki kekhawatiran tentang berat badan atau diet anjing Anda.</li>
+        </ul>
+      </div>
+      {% elif "['Alaskan Malamute']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Telinga Alaskan Malamute harus diperiksa secara teratur untuk menghilangkan 
+            <br>benda asing dan menghindari penumpukan kotoran, dan giginya harus disikat secara teratur.</li>
+          <li>Alaskan Malamute harus disikat setiap hari dengan sikat pin dan sisir logam, 
+           <br>sambil memeriksa keset, yang dapat menampung jamur, dan titik panas, yang dapat terinfeksi.</li>
+          <li>Kondisioner dapat digunakan secukupnya jika bulu terasa kering.</li>
+          <li>Kuku Alaskan Malamute harus dipotong secara teratur.</li>
+          <li>Makanan apa pun harus sesuai dengan usia anjing (anak anjing, dewasa, atau senior). 
+            <br>Beberapa anjing cenderung kelebihan berat badan, jadi perhatikan konsumsi kalori dan tingkat berat badan anjing Anda.</li>
+        </ul>
+      </div>
+      {% elif "['Basset']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Basset memiliki telinga panjang dan terkulai, penting untuk sering memeriksanya untuk memastikan sirkulasi udara tidak menyebabkan infeksi.</li>
+          <li>Menyikat gigi anjing Anda dengan pasta gigi anjing yang diformulasikan khusus setidaknya dua kali seminggu juga merupakan bagian penting dari perawatan kesehatan Basset.</li>
+          <li>Basset juga perlu memotong kukunya secara teratur, dan mandi sesekali akan membantu menjaga bulunya tetap bersih dan berkilau.</li>
+          <li>Olahraga dengan berjalan kaki akan membantu Basset tetap sehat dan mencegahnya menjadi kelebihan berat badan.</li>
+        </ul>
+      </div>
+      {% elif "['Beagle']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Telinga Beagle harus diperiksa setiap minggu, dan gigi harus disikat secara teratur.</li>
+          <li>Menyikat mingguan dengan sikat bulu sedang, sarung tangan atau alat perawatan karet,
+           <br>atau sarung tangan anjing akan menghilangkan rambut rontok, dan juga mendorong pertumbuhan rambut baru.</li>
+          <li>Kuku Beagle harus dipangkas secara teratur, karena kuku yang terlalu panjang dapat menyebabkan anjing sakit serta kesulitan berjalan dan berlari.</li>
+          <li>Beagle adalah anjing yang aktif dan energik yang membutuhkan setidaknya satu jam olahraga setiap hari.</li>
+        </ul>
+      </div>
+      {% elif "['Border Collie']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Telinga Border Collie harus diperiksa secara teratur untuk tanda-tanda infeksi, dan gigi harus disikat secara teratur.</li>
+          <li>Grooming anjing dengan sikat pin sekali atau dua kali seminggu, lebih sering jika diperlukan,
+            untuk menjaga agar bulunya bebas dari tikar, kusut, kotoran, dan kotoran. 
+            <br> Selama musim bulu rontok untuk anjing, menyikat bulu Border Collie setiap hari diperlukan.</li>
+          <li>Border Collie sangat enerjik dan membutuhkan latihan harian lebih dari sekedar jalan-jalan di sekitar blok atau bermain-main cepat di halaman</li>
+          <li>Sosialisasi awal sangat penting dengan Border Collie, yang memerlukan paparan positif kepada <br> berbagai macam orang dan situasi sejak awal masa kanak-kanak hingga sekitar tujuh bulan.</li>
+        </ul>
+      </div>
+      {% elif "['Bulldog']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Pemilik bulldog harus waspada untuk memastikan anjingnya tidak kepanasan. Seekor Bulldog tidak boleh ditinggalkan di bawah terik matahari tanpa pengawasan atau tanpa akses ke naungan dan air.</li>
+          <li>Menyikat menyeluruh dengan sikat lembut selama 10 menit dua atau tiga kali seminggu.</li>
+          <li>Kerutan di wajah Bulldog perlu diperiksa secara teratur untuk memastikan kulitnya bersih dan kering, karena makanan atau kelembapan dapat terperangkap dan menyebabkan iritasi atau infeksi.</li>
+          <li>Telinga dan area di bawah ekor harus dijaga kebersihannya, dan kuku anjing harus dipotong setiap dua minggu sekali.</li>
+          <li>Olahraga ringan diperlukan untuk Bulldog agar tidak obesitas.</li>  
+          <li>Sejak awal Bulldog muda juga harus diajari untuk menerima orang mengambil makanan dari mangkuknya saat dia makan, sehingga dia tidak mengembangkan kebiasaan melindungi makanannya.</li>    
+        </ul>
+      </div>
+      {% elif "['Chihuahua']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Mayoritas Chihuahua adalah anjing kecil yang sehat, tetapi ada beberapa masalah genetik yang dapat memengaruhi ras tersebut. <br> 
+            Sehingga harus dipastikan pada peternak anjing bahwa anak anjing Chihuahua yang dipelihara normal.
+          </li>
+          <li>Chihuahua berbulu halus hanya perlu disikat sesekali dan dimandikan secara teratur agar terlihat rapi, 
+            <br> sedangkan varietas berbulu panjang harus disikat bulunya setidaknya seminggu sekali untuk menghindari kusut atau kusut.</li>
+          <li>Periksa telinga Chihuahua secara teratur, dan singkirkan kotoran untuk menghindari infeksi telinga.</li>
+          <li>Chihuahua suka berlari dan bermain dan biasanya cukup berolahraga di tempat yang sangat kecil.</li>
+        </ul>
+      </div>
+      {% elif "['Chow']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Menyikat secara menyeluruh setidaknya dua kali seminggu dan mandi bulanan dapat menjaga kesehatan kulit dan bulu anjing. <br> 
+            Pastikan untuk segera memperbaiki masalah parasit apa pun, seperti kutu atau caplak.</li>
+          <li>Bulu anak anjing dan bulu di sekitar kepalanya bisa menjadi sangat kusut jika tidak dirawat secara teratur. <br> 
+            Perawatan harus diambil untuk menghapus semua tikar dan menyikat atau menyisir lapisan bawah.</li>
+          <li>Chow membutuhkan jalan-jalan setiap hari dan permainan dengan mainan.</li>
+          <li>Berjalan dengan kecepatan sedang empat kali atau lebih sehari akan membantu Chow dan pemiliknya tetap bahagia dan sehat, <br> 
+            dan melakukan aktivitas bersama meningkatkan ikatan manusia-anjing.</li>
+          <li>Sosialisasi awal dan kelas pelatihan anak anjing direkomendasikan dan membantu memastikan <br> 
+            bahwa Chow tumbuh menjadi pendamping yang dapat menyesuaikan diri dengan baik.</li>
+        </ul>
+      </div>
+      {% elif "['Dalmatian']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Ketulian hadir dalam ras Dalmatian, dan peternak yang bertanggung jawab akan menguji induknya <br> 
+            dan akan menguji seluruh tandu untuk memastikan bahwa semua dapat mendengar.</li>
+          <li>Mandi sesekali dan menyikat mingguan dengan sisir karet untuk menghilangkan rambut mati</li>
+          <li>Dalmatians membutuhkan olahraga teratur agar tetap bugar dan bahagia. Latihan ini dapat terdiri dari <br> 
+            mengejar bola yang dilemparkan ke halaman belakang, berlari di samping pemilik sepeda atau joging</li>
+          <li>Dalmatians bisa menjadi anjing berenergi sangat tinggi dan dapat dengan mudah melakukan <br> 
+            kenakalan jika mereka tidak memiliki cukup kesempatan untuk latihan fisik dan mental.</li>
+          <li>Sangat penting untuk mengekspos anak anjing Anda ke sebanyak mungkin situasi baru dan tidak biasa, <br>
+             tetapi menyenangkan sebagai bagian dari pelatihannya.</li>
+        </ul>
+      </div>
+      {% elif "['Golden Retriever']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Telinga Golden harus diperiksa setiap minggu untuk tanda-tanda infeksi, dan gigi harus sering disikat.</li>
+          <li>Sering kali, penyikatan yang baik dengan sikat sekali atau dua kali seminggu akan menghilangkan sebagian besar rambut mati</li>
+          <li>Golden membutuhkan banyak olahraga setiap hari, Golden menjadi sahabat yang baik dalam perjalanan panjang dan bersepeda.</li>
+          <li>Sosialisasi awal dan kelas pelatihan anak anjing direkomendasikan. Mengekspos anak anjing dengan lembut ke berbagai orang, tempat, 
+           <br>dan situasi antara usia tujuh minggu dan empat bulan akan membantu Golden berkembang menjadi dewasa yang dapat menyesuaikan diri dengan baik.</li>
+        </ul>
+      </div>
+      {% elif "['Maltese']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Perawatan gigi untuk Maltese itu penting, Maltese harus menyikat gigi setiap hari dengan pasta gigi
+           <br>yang diformulasikan khusus untuk anjing, serta pembersihan rutin di dokter hewan.
+          </li>
+          <li>Maltese membutuhkan penyikatan lembut setiap hari ke bulu untuk mencegah kusut.</li>
+          <li>Maltese memiliki kuku yang cepat tumbuh sehingga harus dipotong secara teratur.</li>
+          <li>Periksa telinga Maltese setiap minggu, dan singkirkan rambut berlebih dan kotoran yang terkumpul.</li>
+          <li>Maltese hanya membutuhkan olahraga sesekali agar tetap sehat dan bahagia</li>
+        </ul>
+      </div>
+      {% elif "['Pekingese']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Karena Pekingese tidak memiliki moncong yang panjang untuk bertindak sebagai penghalang alami perlindungan mata, <br> 
+            penting untuk memastikan bahwa lingkungan Anda aman untuk Peke Anda dan tidak ada yang dapat menusuk atau mengiritasi matanya.</li>
+          <li>Menyikat Pekingese satu jam per minggu akan membantu menghilangkan rambut rontok</li>
+          <li>Kuku harus dipotong secara teratur, karena kuku yang terlalu panjang dapat menyebabkan ketidaknyamanan pada anjing.</li>
+        </ul>
+      </div>
+      {% elif "['Pomeranian']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Sisir anjing dengan sikat jepit seminggu sekali untuk menjaga agar bulu tidak kusut.</li>
+          <li>Perhatikan gigi Pomeranian, dan sikat gigi Pomeranian selama perawatan mingguan mereka</li>
+          <li>Pomeranian mendapat manfaat dari beberapa latihan dan menikmati kesempatan untuk berlari, bermain, dan berjalan-jalan.</li>
+          <li>Pom harus dilatih untuk berjalan dengan tali sejak dini dan diajari untuk datang saat dipanggil.</li>
+        </ul>
+      </div>
+      {% elif "['Poodle']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Bulu Poodle perlu disikat setiap hari agar bulunya tidak kusut</li>
+          <li>Poodle membutuhkan olahraga yang baik setiap hari agar sesuai dengan tingkat energinya yang tinggi</li>
+          <li>Berenang adalah olahraga yang bagus untuk Poodle, dan sebagian besar Poodle suka masuk ke dalam air.</li>
+        </ul>
+      </div>
+      {% elif "['Shiba Inu']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Kondisi kesehatan paling umum pada Shiba Inu adalah Alergi, sehingga harus diperiksa terlebih dahulu sebelum diadopsi.</li>
+          <li>Meniup anjing dengan pengering rambut adalah cara yang baik untuk menghilangkan rambut rontok, kotoran, dan ketombe serta kutu pada Shiba Inu.</li>
+          <li>Kebanyakan Shiba Inu cukup enerjik dan suka berjalan-jalan sehingga mudah untuk dilatih.</li>
+          <li>Shiba Inu harus terus diperhatikan karena pintu yang terbuka, gerbang yang tidak dikunci, atau saat anda lengah, ada kemungkinan Shiba akan kabur</li>
+        </ul>
+      </div>
+      {% elif "['Shih Tzu']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Karena mantel tebal dan wajah pendek, Shih Tzu tidak mentolerir panas dengan baik dan bukan perenang yang baik.</li>
+          <li>Shih Tzu dengan mantel panjang membutuhkan penyikatan setiap hari, dan Mandi setiap tiga atau empat minggu akan membantu menjaga bulu tetap bersih</li>
+          <li>Memotong kuku dan membersihkan telinga harus menjadi bagian dari rutinitas perawatan Shih Tzu.</li>
+          <li>Shih Tzu hanya membutuhkan olahraga kecil dengan bermain di dalam ruangan</li>
+          <li>Shih Tzu dapat dilatih dengan cara terbaik yaitu dengan metode pelatihan berdasarkan pujian dan penghargaan terhadapnya</li>
+        </ul>
+      </div>
+      {% elif "['Siberian Husky']" in txt %}
+      <div style="text-align: center; background-color: white;">
+        <ul style="display: inline-block;
+        text-align: left;">
+          <li>Siberian Husky dapat membersihkan diri sendiri dan seringkali hanya membutuhkan beberapa kali mandi dalam setahun</li>
+          <li>Menyikat bulu Husky mingguan dapat membantu menjaga mantel dan kulit dalam kondisi terbaik</li>
+          <li>Perhatikan baik-baik panjang kuku, dan jaga agar kuku tetap rapi untuk mencegah masalah kaki.</li>
+          <li>Siberian Husky merupakan anjing yang aktif yang membutuhkan banyak olahraga, mereka adalah ras yang paling bahagia ketika memiliki fungsi untuk dilakukan</li>
+          <li>Olahraga teratur penting baik secara fisik maupun mental, dan melakukan aktivitas bersama memperkuat ikatan antara anjing dan pemiliknya</li>
+          <li>Siberian Husky adalah anjing yang sangat sosial, dan secara teratur membutuhkan teman atau anjing lain, sehingga tidak cocok ditinggal sendirian sepanjang hari</li>
+        </ul>
+      </div>
+      {% endif %}
+    </p>
+    {% endfor %}
+  </body>
+</html>
